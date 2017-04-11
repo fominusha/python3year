@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Результаты</title>
+</head>
+<body>
+<p>Спасибо за ответ!</p>
+
+<p>Итак, вот общие результаты:<br>
+{% for animal in stats %}
+{{ animal }}: количество проголосовавших = {{ stats[animal] }}<br>
+{% endfor %}</p>
+
+<p>{% for person in all_names %}
+{{ person }}: голосовал(а) {{ all_names[person] }} раз(а) <br>
+{% endfor %}</p>
+</body>
+</html>
